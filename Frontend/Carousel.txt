@@ -1,0 +1,41 @@
+import { default as React } from "react";
+import { Carousel, CarouselCaption, CarouselItem } from "react-bootstrap";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
+const Work = () => {
+  return (
+    <div>
+      <Carousel>
+        {" "}
+        <CarouselItem>
+          <div className="">
+           <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ums6Rp3LJDJZ4ClL81ZAa1x7Jos8YVCdKg&s"/>
+            <CarouselCaption>
+              {" "}
+              <p className="legend">Legend 1</p>{" "}
+            </CarouselCaption>
+          </div>{" "}
+        </CarouselItem>
+        <CarouselItem>
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAz57xpknUvRi6k3Ww2izWmCzJHcsOmV9bwQ&s" />
+            <CarouselCaption>
+              {" "}
+              <p className="legend">Legend 2</p>{" "}
+            </CarouselCaption>
+          </div>{" "}
+        </CarouselItem>
+        <CarouselItem>
+          <div>
+           <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkF8dc5Huhb3LPZhiMnnoJYbnaO97FZIlb-A&s"/>
+            <CarouselCaption>
+              <p className="legend">Legend 3</p>{" "}
+            </CarouselCaption>
+          </div>{" "}
+        </CarouselItem>
+      </Carousel>
+    </div>
+  );
+};
+
+export default Work;
